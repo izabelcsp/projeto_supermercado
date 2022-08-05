@@ -22,7 +22,8 @@ $comando->execute();
 // 
 echo "cadastrado com sucesso!";
 
-
+// fechar e conexão 
+$con = null; 
 
 }catch (PDOException $erro){
     echo $erro->getMessage();

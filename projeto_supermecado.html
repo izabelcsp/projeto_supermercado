@@ -15,27 +15,27 @@
         <form action="backend/cadastrar_produtos.php" method="post">
             <div>
                 <label for="produto">Produto</label>
-                <input type="text" name="produto" id="produto">
+                <input type="text" name="produto" id="produto" required>
             </div>
 
             <div>
                 <label for="marca">Marca</label>
-                <input type="text" name="marca" id="marca">
+                <input type="text" name="marca" id="marca" required>
             </div>
 
             <div>
                 <label for="categoria">Categoria</label>
-                <input type="text" name="categoria" id="categoria">
+                <input type="text" name="categoria" id="categoria" required>
             </div>
 
             <div>
                 <label for="validade">Validade</label>
-                <input type="date" name="validade" id="validade">
+                <input type="date" name="validade" id="validade" required>
             </div>
 
             <div>
                 <label for="valor">Valor</label>
-                <input type="text" name="valor" id="valor">
+                <input type="text" name="valor" id="valor" required>
             </div>
 
             <input type="submit" value="Cadastrar">
