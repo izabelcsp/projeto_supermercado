@@ -7,7 +7,7 @@ try{
 
     $produto = $_POST['produto'];
     $marca = $_POST['marca'];
-    $categoria = $_POST['produto'];
+    $categoria = $_POST['categoria'];
     $validade = $_POST['validade'];
     $valor = $_POST['valor'];
 

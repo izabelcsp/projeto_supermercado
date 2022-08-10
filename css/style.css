@@ -1,22 +1,42 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#container{
-    align-items: center;
+#grid-produtos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:15px;
-
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
 }
 
-h2{
-    text-align: center;
+.figure-produtos{
+    border: 2px solid #000;
+    border-radius: 4px;
 }
 
+.img-produtos{
+    width: 100%;
+}
 
+.figcaption-produtos{
+    padding: 10px;
+}
+
+.btn-comprar{
+    display: grid;
+    padding: 6px 12px;
+    margin: 10px auto;
+    background-color: green;
+    border-radius: 3px;
+    font-weight: bold;
+    border: none;
+    color: aliceblue;
+    
+}
+
+.btn_produtos :hover{
+    transition: 3;
+}
  
     
 
