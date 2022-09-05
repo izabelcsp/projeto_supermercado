@@ -40,32 +40,36 @@ try {
 </head>
 
 <body>
+
+    <hr>
+    <button><a href="admin/index.php">Sair</a></button>
+    <hr>
+
     <div id="container">
-        <h3 class="">Lista de Viagens</h3>
+        <h3 class="">Lista de Produtos</h3>
         <div id="grid-produtos">
 
             <?php
-            foreach ($dados as $d):
+            foreach ($dados as $d) :
             ?>
                 <figure class="figure-produtos">
-                    <img class="img-produtos" src="img/viagem-faltando.png" alt="imagem do produto">
+                    <img class="img-produtos" src="img/upload/<?php echo $d['imagem']?>" alt="imagem do produto">
+                    
                     <figcaption class="figcaption-produtos">
-
                         <h4><?php echo $d['produto']; ?></h4>
                         <h5><?php echo $d['marca']; ?></h5>
                         <h5><?php echo $d['categoria']; ?></h5>
                         <h5><?php echo $d['validade']; ?></h5>
                         <h5>R$<?php echo $d['valor']; ?></h5>
-
                         <button class="btn-comprar">Comprar</button>
                     </figcaption>
                 </figure>
 
-            <?php 
-            endforeach; 
-            $con= null;
+            <?php
+            endforeach;
+            $con = null;
             ?>
-            
+
 
         </div>
     </div>

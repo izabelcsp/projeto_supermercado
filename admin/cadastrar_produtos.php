@@ -1,3 +1,9 @@
+<?php 
+// include do controle de sessão 
+include'../backend/controle_sessao.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,7 +19,13 @@
     <div id="container">
         <h2>Cadastro de produtos</h2>
 
-        <form class="form-header" action="backend/cadastrar_produtos.php" method="post">
+        <hr>
+        <button><a href="../listar_produtos.php">Listar produtos</a></button>
+        <button><a href="gerenciar_produtos.php">Gerenciar</a></button>
+        <button><a href="../backend/logout.php">Sair</a></button>
+        <hr>
+
+        <form class="form-header" action="../backend/_cadastrar_produtos.php" method="post" enctype="multipart/form-data">
             <fieldset class="caixa">
                 <div>
                     <label for="produto">Produto</label>
@@ -39,8 +51,12 @@
                     <label for="valor">Valor</label>
                     <input type="text" name="valor" id="valor" required>
                 </div>
+                <div>
+                    <label for="imagem">Imagem</label>
+                    <input type="file" name="imagem" id="imagem">
+                </div>
 
-                <button class="btn_produtos">cadastrar</button>
+                <input type="submit" value="Cadastrar">
             </fieldset>
 
         </form>

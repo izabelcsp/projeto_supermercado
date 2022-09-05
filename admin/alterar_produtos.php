@@ -1,4 +1,8 @@
 <?php 
+
+// include do controle de sessão 
+include'../backend/controle_sessao.php';
+
 // include da coneção
 include'../backend/conexao.php';
 
@@ -6,7 +10,7 @@ include'../backend/conexao.php';
 $id = $_GET['id'];
 
 try{
-    // comando SQL que irá selecionar as viagens por id 
+    // comando SQL que irá selecionar os produtos por id 
     $sql = "SELECT * FROM tb_produtos WHERE id = $id";
 
     $comando = $con->prepare($sql);
@@ -15,10 +19,6 @@ try{
 
     $dados = $comando->fetchAll(PDO::FETCH_ASSOC);
 
-    // echo "<pre>";
-    // var_dump($dados);
-    // echo "</pre>";
-    // echo [0] ['titulo'];
 
 
 

@@ -7,6 +7,7 @@ try{
     define('SENHA','');
     define('BASEDEDADOS','db_supermercado');
 
+    
     $con = new PDO("mysql:host=".SERVIDOR.";dbname=".BASEDEDADOS, USUARIO, SENHA);
 
     // defina o modo de erro PDO para exceção
