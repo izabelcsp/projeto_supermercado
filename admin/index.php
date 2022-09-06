@@ -1,3 +1,13 @@
+<?php
+// inicia a sessão 
+session_start();
+
+// o isset verifica se a variavel de sessão existe 
+if(isset($_SESSION['usuario'])){
+    header('location: gerenciar_produtos.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,6 +20,7 @@
 </head>
 
 <body>
+    <form action="../backend/_validar_login.php" method="post">
     <div class="form_login">
         <h1>Login</h1>
         <div>
@@ -19,9 +30,11 @@
             <input type="password" name="senha" id="senha" placeholder="senha">
             <br>
             <br>
-            <input type="submit" value="Entrar">
+            
+            <input class="btn-login" type="submit" value="Entrar">
         </div>
     </div>
+    </form>
 </body>
 
 </html>

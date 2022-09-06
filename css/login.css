@@ -22,4 +22,22 @@ body{
 
 input{
     padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.btn-login{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    color: wheat;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-login:hover{
+    background-color: rgb(99, 173, 247);
 }

@@ -45,7 +45,7 @@ try{
 <body>
     <div id="container">
         <h3>Alterar produtos</h3>
-        <form action="../backend/_alterar_viagens.php" method="post" enctype="multipart/form-data">
+        <form action="../backend/_alterar_produtos.php" method="post" enctype="multipart/form-data">
 
             <div id="grid_alterar">
                 <div>
